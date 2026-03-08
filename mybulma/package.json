@@ -1,0 +1,27 @@
+{
+  "name": "mystyles",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "css/sass/mystyles.scss",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "teneolepos.github.io"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Sining Zhou",
+  "license": "MIT",
+  "dependencies": {
+    "bulma": "^0.8.2",
+    "node-sass": "^4.14.1"
+  },
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url sass/mystyles.scss css/mystyles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  }
+}
