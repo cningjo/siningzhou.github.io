@@ -26,8 +26,12 @@ if (!password) {
   process.exit(1);
 }
 if (password.length < MIN_LENGTH) {
-  console.error(`Please use at least ${MIN_LENGTH} characters. Someone can guess offline against the stored hash, so a longer passphrase is much safer.`);
-  process.exit(1);
+  const message = `That password is under ${MIN_LENGTH} characters. The stored hash is public, so short or common passwords can be guessed offline.`;
+  if (!process.env.GATE_ALLOW_SHORT) {
+    console.error(`${message} To use it anyway, run again with GATE_ALLOW_SHORT=1.`);
+    process.exit(1);
+  }
+  console.warn(`Warning: ${message}`);
 }
 
 const salt = randomBytes(16);

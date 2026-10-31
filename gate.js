@@ -19,7 +19,7 @@
   "use strict";
 
   /* GATE-CONFIG:START */
-  var CONFIG = { salt: "", iterations: 600000, verifier: "", token: "" };
+  var CONFIG = { salt: "8653f7a772685d3762ea4dc4c5dfa356", iterations: 600000, verifier: "7bc00587bd584999f34ea050c1966a8389e8831fe39ef6d05caec136b140eff3", token: "ab87cf813f430830601bbd3117a907b7" };
   /* GATE-CONFIG:END */
 
   var STORAGE_KEY = "sz_gate";
