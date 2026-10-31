@@ -61,7 +61,7 @@ export default function Podcast() {
 
           <p className="podcast-description">
             Step inside this AI-generated podcast spotlight created for the Google DeepMind ReDI team.
-            Discover how Sining Zhou’s GoodRx product leadership, $100k Columbia research grant,
+            Discover how Sining Zhou’s GoodRx product leadership, $100k Columbia University research grant,
             and ”master hobbyist” energy combine to make her a mission-driven powerhouse for frontier
             AI safety and ethics.
           </p>
