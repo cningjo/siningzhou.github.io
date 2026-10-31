@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "build:dev": "vite build --mode development",
+    "gate:set-password": "node scripts/set-gate-password.mjs",
     "build:podcast": "rm -rf ../podcast/assets ../podcast/index.html ../podcast/podcast.html && vite build --config vite.podcast.config.ts && mv ../podcast/podcast.html ../podcast/index.html",
     "lint": "eslint .",
     "preview": "vite preview"
