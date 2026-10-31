@@ -15,7 +15,9 @@ export default defineConfig({
   },
   build: {
     outDir: path.resolve(__dirname, "../podcast"),
-    emptyOutDir: true,
+    // Don't wipe the folder: podcast/media/ holds committed video and image files.
+    // The build:podcast script removes only the generated files first.
+    emptyOutDir: false,
     rollupOptions: {
       input: path.resolve(__dirname, "podcast.html"),
     },

@@ -3,10 +3,11 @@ import * as DialogPrimitive from "@radix-ui/react-dialog";
 import { Play, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
-import video from "@/assets/sining-podcast.mp4.asset.json";
-import compatibleVideo from "@/assets/sining-podcast.webm.asset.json";
-import preview from "@/assets/podcast-opening.jpg.asset.json";
 import svgPaths from "@/imports/svg-paths";
+
+// Media is committed in the repo at podcast/media/ and served by GitHub Pages.
+const videoUrl = "/podcast/media/sining-podcast.mp4";
+const previewUrl = "/podcast/media/podcast-opening.jpg";
 
 const episodeTitle = "Are you ReDI to dive Deep with Sining?";
 
@@ -34,7 +35,7 @@ export default function Podcast() {
             <DialogPrimitive.Trigger asChild>
               <Button variant="ghost" className="podcast-episode-trigger" aria-label={`Play ${episodeTitle}`}>
                 <span className="podcast-preview">
-                  <img src={preview.url} alt="Blue preview of the podcast video" />
+                  <img src={previewUrl} alt="Blue preview of the podcast video" />
                   <span className="podcast-play"><Play aria-hidden="true" /></span>
                 </span>
                 <span className="podcast-headline">Are you <em>ReDI</em> to dive <em>Deep</em> with Sining?</span>
@@ -51,9 +52,8 @@ export default function Podcast() {
                     </Button>
                   </DialogPrimitive.Close>
                 </div>
-                <video className="podcast-player" poster={preview.url} controls autoPlay playsInline preload="metadata">
-                  <source src={video.url} type="video/mp4" />
-                  <source src={compatibleVideo.url} type="video/webm" />
+                <video className="podcast-player" poster={previewUrl} controls autoPlay playsInline preload="metadata">
+                  <source src={videoUrl} type="video/mp4" />
                 </video>
               </DialogPrimitive.Content>
             </DialogPrimitive.Portal>
