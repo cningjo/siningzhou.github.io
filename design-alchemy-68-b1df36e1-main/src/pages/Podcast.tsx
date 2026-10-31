@@ -24,9 +24,9 @@ export default function Podcast() {
     <main className="podcast-page bg-background text-foreground">
       <div className="podcast-layout">
         <header className="podcast-identity">
-          <a href="/" aria-label="Sining Zhou portfolio" className="podcast-logo-link">
+          <div className="podcast-logo-frame">
             <img src={logo} alt="Sining Zhou" className="podcast-logo" />
-          </a>
+          </div>
           <h1 className="podcast-name">The Portfolio<br />of Sining Zhou</h1>
         </header>
 
