@@ -2,13 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'Akshar';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('/__l5e/assets-v1/7d93efc1-a412-4e5e-86cb-4ed2314ce169/akshar.ttf') format('truetype');
-}
+/* Akshar is loaded from Google Fonts (see podcast.html). */
 
 @layer base {
   :root {
