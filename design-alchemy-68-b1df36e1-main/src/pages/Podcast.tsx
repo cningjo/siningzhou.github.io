@@ -36,9 +36,11 @@ export default function Podcast() {
               <Button variant="ghost" className="podcast-episode-trigger" aria-label={`Play ${episodeTitle}`}>
                 <span className="podcast-preview">
                   <img src={previewUrl} alt="Blue preview of the podcast video" />
-                  <span className="podcast-play"><Play aria-hidden="true" /></span>
+                  <span className="podcast-play"><span className="podcast-play-badge"><Play aria-hidden="true" /></span></span>
                 </span>
-                <span className="podcast-headline">Are you <em>ReDI</em> to dive <em>Deep</em> with Sining?</span>
+                <span className="podcast-headline">
+                  <span className="podcast-headline-text">Are you <em>ReDI</em> to dive <em>Deep</em> with Sining?</span>
+                </span>
               </Button>
             </DialogPrimitive.Trigger>
             <DialogPrimitive.Portal>
