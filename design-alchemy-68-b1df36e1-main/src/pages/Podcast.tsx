@@ -67,7 +67,7 @@ export default function Podcast() {
             and ”master hobbyist” energy combine to make her a mission-driven powerhouse for frontier
             AI safety and ethics.
           </p>
-          <p className="podcast-meta">YOUR VIEW ONLY <span aria-hidden="true">·</span> 6 MIN</p>
+          <p className="podcast-meta">YOUR VIEW ONLY <span aria-hidden="true">·</span> NOVEMBER 2026 <span aria-hidden="true">·</span> 6 MIN</p>
           <svg className="podcast-brush" viewBox="0 0 266 7" preserveAspectRatio="none" aria-hidden="true">
             <path d={svgPaths.p14d35f00} fill="currentColor" />
           </svg>
